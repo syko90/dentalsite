@@ -123,3 +123,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),   
 ]
+
+'''
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_PORT_USER = 'kurantowicz.maciej@gmail.com'
+EMAIL_HOST_PASSWORD = 'password'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+''' 
+# python -m smtpd -n -c DebbugingServer localhost:1025
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_PORT_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
